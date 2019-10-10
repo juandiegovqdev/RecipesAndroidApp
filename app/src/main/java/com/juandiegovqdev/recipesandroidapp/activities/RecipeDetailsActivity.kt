@@ -5,6 +5,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.juandiegovqdev.recipesandroidapp.GenericVariables
 import com.juandiegovqdev.recipesandroidapp.R
+import com.juandiegovqdev.recipesandroidapp.utils.openWebsite
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_recipe_details.*
 import kotlinx.android.synthetic.main.content_recipe_details.*
@@ -14,6 +15,7 @@ class RecipeDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initializeObjects()
+        initializeListeners()
     }
 
     private fun initializeObjects() {
@@ -46,7 +48,9 @@ class RecipeDetailsActivity : AppCompatActivity() {
     }
 
     fun initializeListeners() {
-
+        recipe_website_card_view.setOnClickListener {
+            this.openWebsite(GenericVariables.selectedRecipe.href)
+        }
     }
 
 }
