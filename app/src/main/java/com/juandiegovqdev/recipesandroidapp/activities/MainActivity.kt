@@ -25,8 +25,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initializeObjects()
-        // val url = "http://www.recipepuppy.com/api/?q=omelet&p=3"
-        // AsyncTaskHandleJson().execute(url)
     }
 
     private fun initializeObjects() {
@@ -88,7 +86,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         val searchView = menu.findItem(R.id.menu_search).actionView as SearchView
         searchView.queryHint = "Search People"
         searchView.setOnQueryTextListener(this)
-        searchView.isIconified = false
+        searchView.isIconified = true
         return true
     }
 

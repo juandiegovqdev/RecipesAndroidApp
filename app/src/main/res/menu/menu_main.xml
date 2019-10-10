@@ -8,6 +8,6 @@
         android:id="@+id/menu_search"
         android:title="Search"
         appcompat:actionViewClass="androidx.appcompat.widget.SearchView"
-        appcompat:showAsAction="always" />
+        appcompat:showAsAction="ifRoom" />
 
 </menu>
