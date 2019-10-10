@@ -15,6 +15,7 @@
         tools:ignore="ScrollViewSize">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/recipe_thumbnail_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -29,6 +30,7 @@
             tools:targetApi="lollipop">
 
             <ImageView
+                android:id="@+id/recipe_thumbnail"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 tools:ignore="ContentDescription" />
@@ -36,6 +38,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/recipe_title_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -61,6 +64,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/recipe_ingredients_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -85,7 +89,9 @@
                     android:layout_margin="16dp"
                     android:textColor="@android:color/black"
                     android:textSize="32sp"
-                    tools:text="Ingredients" />
+                    android:text="Ingredients"
+                    tools:text="Ingredients"
+                    tools:ignore="HardcodedText" />
 
                 <View
                     android:layout_width="match_parent"
@@ -107,6 +113,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/recipe_website_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -131,6 +138,7 @@
                     android:layout_margin="16dp"
                     android:textColor="@android:color/black"
                     android:textSize="32sp"
+                    android:text="Website"
                     tools:text="Website" />
 
                 <View
