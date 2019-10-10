@@ -31,7 +31,7 @@ class RecipeListViewAdapter(private var activity: Activity, private var items: A
         val viewHolder: ViewHolder
         if (convertView == null) {
             val inflater =
-                activity?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+                activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             view = inflater.inflate(R.layout.list_view_recipe, null)
             viewHolder = ViewHolder(view)
             view.tag = viewHolder

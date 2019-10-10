@@ -50,6 +50,7 @@
             tools:targetApi="lollipop">
 
             <TextView
+                android:id="@+id/recipe_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -92,6 +93,7 @@
                     android:background="@android:color/darker_gray" />
 
                 <TextView
+                    android:id="@+id/recipe_ingredients"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
@@ -137,6 +139,7 @@
                     android:background="@android:color/darker_gray" />
 
                 <TextView
+                    android:id="@+id/recipe_website"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"

@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#000"
     android:layout_height="match_parent"
+    android:background="#000"
     tools:context=".activities.MainActivity">
 
     <ListView
@@ -17,9 +17,8 @@
         android:layout_height="match_parent"
         android:gravity="center_vertical|center_horizontal"
         android:text="NO RECIPES SEARCHED!"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
-        android:visibility="invisible"
         tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
