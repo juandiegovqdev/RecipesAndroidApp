@@ -102,12 +102,12 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
                 list.visibility = View.INVISIBLE
             }
         } else {
-            val url = "http://www.recipepuppy.com/api/?q=${newText.trim()}&p=3"
+            val url =
+                GenericVariables.FIRST_URL + "" + newText.trim() + "" + GenericVariables.SECOND_URL
             AsyncTaskHandleJson().execute(url)
             no_recipes_text.visibility = View.INVISIBLE
             list.visibility = View.VISIBLE
         }
-
         return true
     }
 
