@@ -1,4 +1,4 @@
-package com.juandiegovqdev.recipesandroidapp;
+package com.juandiegovqdev.recipesandroidapp.utils;
 
 import android.util.Log;
 
@@ -33,12 +33,10 @@ public class JSONParser {
         try {
             _url = new URL(url);
             urlConnection = (HttpURLConnection) _url.openConnection();
-        }
-        catch (MalformedURLException e) {
+        } catch (MalformedURLException e) {
             Log.e("JSON Parser", "Error due to a malformed URL " + e.toString());
             return null;
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             Log.e("JSON Parser", "IO error " + e.toString());
             return null;
         }
@@ -52,19 +50,16 @@ public class JSONParser {
                 total.append(line).append('\n');
             }
             output = total.toString();
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             Log.e("JSON Parser", "IO error " + e.toString());
             return null;
-        }
-        finally{
+        } finally {
             urlConnection.disconnect();
         }
 
         try {
             json = new JSONObject(output);
-        }
-        catch (JSONException e) {
+        } catch (JSONException e) {
             Log.e("JSON Parser", "Error parsing data " + e.toString());
         }
 

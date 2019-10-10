@@ -1,4 +1,4 @@
-package com.juandiegovqdev.recipesandroidapp
+package com.juandiegovqdev.recipesandroidapp.utils
 
 import org.json.JSONException
 import org.json.JSONObject

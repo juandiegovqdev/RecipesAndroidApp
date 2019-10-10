@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="3dp"
+        card_view:cardBackgroundColor="#fff"
+        tools:ignore="UnusedAttribute"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            tools:ignore="UselessLeaf">
+
+            <ImageView
+                android:id="@+id/recipe_thumbnail"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="8dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/recipe_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/recipe_thumbnail"
+                android:layout_toRightOf="@+id/recipe_thumbnail"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                tools:text="Omelette" />
+
+            <TextView
+                android:id="@+id/recipe_ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recipe_title"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/recipe_thumbnail"
+                android:layout_toRightOf="@+id/recipe_thumbnail"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                tools:text="Omelette, Omelette, Omelette, Omelette, Omelette, Omelette" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
